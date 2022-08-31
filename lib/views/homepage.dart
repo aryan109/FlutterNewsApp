@@ -20,7 +20,9 @@ class _HomePageState extends State<HomePage> {
 
   void getNews() async {
     News news = News();
+    print('#1AA');
     await news.getNews();
+    print('#2AA');
     newslist = news.news;
     setState(() {
       _loading = false;
